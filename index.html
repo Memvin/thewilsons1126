@@ -1,0 +1,306 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Wedding of Mark & Emmi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Cormorant+Garamond:ital@1&family=Allura&display=swap" rel="stylesheet">
+
+  <!-- Local stylesheet (cache-busted) -->
+  <link rel="stylesheet" href="styles.css?v=11">
+</head>
+
+<body>
+
+<header class="top" id="home">
+  <div class="headerImage">
+    <img src="header.png" alt="Floral header">
+
+    <div class="headerOverlay">
+      <p class="weddingOf">The Wedding of</p>
+      <h1 class="names">Mark Wilson &amp; Emmi Vinberg</h1>
+
+<nav class="nav">
+  <a href="#home">HOME</a>
+  <a href="#rsvp">RSVP</a>
+  <a href="#faq">FAQ</a>
+  <a href="things-to-do.html">THINGS TO DO</a>
+
+<span class="langSwitch">
+  <a href="index.html" class="lang active" aria-label="English (Australia)">
+    <img class="flagIcon" src="flag-au.png" alt="Australian flag">
+  </a>
+  <a href="index-fi.html" class="lang" aria-label="Suomi">
+    <img class="flagIcon" src="flag-fi.png" alt="Finnish flag">
+  </a>
+</span>
+
+</nav>
+
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="welcome">
+    <p>
+      We’re so grateful you’re here. After a few changes to plans over the years, we’re excited to finally
+      celebrate with the people we love. This website has everything you’ll need for the day — and we can’t
+      wait to share it with you.
+    </p>
+  </section>
+  <section class="photoFrame">
+    <img src="hero.jpg" alt="Mark and Emmi">
+  </section>
+
+  <div class="rule"></div>
+  <section class="centerText">
+    <p class="invite">Please join us for our wedding celebration</p>
+    <p class="dateLine">Tuesday, 10th November 2026 · Sittella Winery, Herne Hill</p>
+    <p class="timeLine">Ceremony begins at <strong>4:00pm</strong></p>
+
+    <p class="smallNote">
+      Please arrive by <strong>3:30pm</strong> to avoid delays. This will be an unplugged ceremony —
+      we kindly ask that phones and cameras be put away.
+    </p>
+  </section>
+
+  <div class="rule"></div>
+
+<section id="details" class="infoSection">
+  <h2 class="sectionTitle">Venue</h2>
+
+  <p class="infoMain">
+    Sittella Winery, 100 Barrett Street, Herne Hill WA 6056
+  </p>
+
+  <p class="infoSub">
+    <a class="mapLink" 
+       href="https://maps.google.com/?q=Sittella+Winery+100+Barrett+Street+Herne+Hill+WA+6056"
+       target="_blank" 
+       rel="noopener">
+      View on Google Maps
+    </a>
+  </p>
+
+  <div class="rule"></div>
+</section>
+
+
+  <section class="infoSection">
+    <h2 class="sectionTitle">After the Ceremony</h2>
+    <p class="infoMain">Cocktail hour followed by dinner and dancing</p>
+    <div class="rule"></div>
+  </section>
+
+  <section class="infoSection">
+    <h2 class="sectionTitle">Dress Code</h2>
+    <p class="infoMain"><strong>Smart casual</strong></p>
+    <p class="infoSub">
+      Please avoid black, white, or red. No ties or shorts, thank you.
+    </p>
+    <div class="rule"></div>
+  </section>
+
+  <section class="infoSection">
+    <h2 class="sectionTitle">Gifts</h2>
+    <p class="infoMain">Your presence is truly all we ask for</p>
+    <p class="infoSub">
+      If you’d like to include a card, a wishing well will be available on the day.
+    </p>
+    <div class="rule"></div>
+  </section>
+
+  <section id="travel" class="infoSection">
+    <h2 class="sectionTitle">Getting to Sittella</h2>
+    <p class="infoMain">
+      Free parking is available at the venue. There is no public transport to Sittella.
+    </p>
+    <p class="infoSub">
+      Uber operates in the area, however taxis tend to be more reliable late in the evening.
+      Rideshare is recommended if you plan to drink, and we will do our best to assist with shared rides if you note it on your RSVP.
+    </p>
+    <div class="rule"></div>
+  </section>
+
+  <section id="rsvp" class="infoSection">
+    <h2 class="sectionTitle">RSVP</h2>
+    <p class="infoMain">Please respond by <strong>Sunday, 27th September 2026</strong></p>
+
+    <!-- stacked print + countdown -->
+    <div class="rsvpMeta">
+      <a class="mapLink printLink" href="print.html" target="_blank" rel="noopener">
+        Print-friendly details
+      </a>
+
+      <div class="rsvpCountdown" aria-live="polite">
+        <span class="rsvpCountdownLabel">RSVP closes in</span>
+        <span id="rsvpDays" class="rsvpCountdownValue">—</span>
+        <span class="rsvpCountdownUnit">days</span>
+      </div>
+    </div>
+
+    <div class="rsvpEmbed">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfpIbypQawUEqn01RCtXefdu895ELcLeRdqgrAR8_xfxRMj5A/viewform?embedded=true"
+        title="Wedding RSVP"
+      ></iframe>
+    </div>
+
+    <div class="rule"></div>
+  </section>
+
+  <!-- FAQ ACCORDION -->
+  <section id="faq" class="infoSection">
+    <h2 class="sectionTitle">FAQ</h2>
+
+    <div class="accordion">
+
+      <details>
+        <summary>Who is invited?</summary>
+        <div class="answer">
+          Please note that the invitation is only extended to those named on the invitation.
+          This will be an adults-only celebration (no children of any age).
+        </div>
+      </details>
+
+      <details>
+        <summary>When do I need to RSVP by?</summary>
+        <div class="answer">
+          Please RSVP by <strong>Sunday, 27th September 2026</strong>. The RSVP form includes dietary requirements/allergies,
+          song requests and a section for you to ask questions, give us advice or (if you wish) share a memory with us.
+        </div>
+      </details>
+
+      <details>
+        <summary>Where is the wedding?</summary>
+        <div class="answer">
+          <a class="mapLink" href="https://maps.google.com/?q=Sittella+Winery+100+Barrett+Street+Herne+Hill+WA+6056" target="_blank" rel="noopener">
+            Sittella Winery, 100 Barrett Street, Herne Hill WA 6056
+          </a>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I get there?</summary>
+        <div class="answer">
+          Driving is the easiest option. Free parking is available at the venue. There is no public transport to Sittella.
+          We will do our best to assist with shared rides if you note it on your RSVP. While Uber and DiDi are available,
+          taxis might be more reliable later in the evening.
+        </div>
+      </details>
+
+      <details>
+        <summary>What is the dress code?</summary>
+        <div class="answer">
+          Smart casual. Please avoid black, white, or red. No ties or shorts, thank you.
+          For men: collared shirt with chinos/dress pants (jacket optional). Light colours preferred for ladies.
+        </div>
+      </details>
+
+      <details>
+        <summary>What is the weather like?</summary>
+        <div class="answer">
+          November can be anything from cool and rainy to hot and sunny. Ceremony and reception areas are covered, rain or shine.
+          Please use sunscreen (we’ll have some available), stay hydrated, and consider bringing a light jacket for the evening.
+        </div>
+      </details>
+
+      <details>
+        <summary>Is it an unplugged ceremony?</summary>
+        <div class="answer">
+          Yes — we kindly ask that phones and cameras be put away during the ceremony. After the ceremony, please feel free to take photos
+          and use <strong>#TheWilsons1126</strong>, but please hold off posting the “newly married” until after the ceremony.
+        </div>
+      </details>
+
+      <details>
+        <summary>Can we post on social media?</summary>
+        <div class="answer">
+          Yes — we’d love that. Please wait until after the ceremony, and feel free to use our hashtag <strong>#TheWilsons1126</strong>.
+          (And please avoid posting the “newly married” before the ceremony finishes.)
+        </div>
+      </details>
+
+      <details>
+        <summary>What’s the schedule?</summary>
+        <div class="answer">
+          Please arrive by <strong>3:30pm</strong> for a <strong>4:00pm</strong> ceremony start. Cocktail hour, dinner and dancing will follow.
+          We’ll conclude the night at <strong>11:30pm</strong>.
+        </div>
+      </details>
+
+      <details>
+        <summary>Gifts / wishing well?</summary>
+        <div class="answer">
+          Your presence is truly all we ask for. If you’d like to include a card, a wishing well will be available on the day.
+        </div>
+      </details>
+
+      <details>
+        <summary>Accommodation options</summary>
+        <div class="answer">
+          <p class="answerText">
+            We recommend staying nearby in the Swan Valley area (or Midland for convenience). Some recommendations are below.
+            We are in the process of seeing if we can get a discounted rate — if successful, we will communicate this later.
+          </p>
+
+          <ul class="answerList">
+            <li><a class="mapLink" href="https://all.accor.com/hotel/1980/index.en.shtml" target="_blank" rel="noopener">Novotel Vines Resort Swan Valley</a></li>
+            <li><a class="mapLink" href="https://all.accor.com/hotel/7517/index.en.shtml" target="_blank" rel="noopener">The Sebel Swan Valley The Vines</a></li>
+            <li><a class="mapLink" href="https://swanvalleyhotel.com.au/" target="_blank" rel="noopener">The Swan Valley Hotel</a></li>
+            <li><a class="mapLink" href="https://mandoonestate.com.au/maya-maya" target="_blank" rel="noopener">Maya Maya at Mandoon Estate</a></li>
+            <li><a class="mapLink" href="https://www.big4.com.au/caravan-parks/wa/greater-perth/perth-midland-tourist-park" target="_blank" rel="noopener">BIG4 Perth Midland Tourist Park</a></li>
+            <li><a class="mapLink" href="https://www.questapartments.com.au/properties/wa/midland/quest-midland" target="_blank" rel="noopener">Quest Midland</a></li>
+          </ul>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="rule"></div>
+    <p class="muted">We can’t wait to celebrate with you <span class="heart">♥</span></p>
+    <a class="backToTop" href="#home">Back to top ↑</a>
+  </footer>
+
+</main>
+
+<script>
+  (function () {
+    const deadline = new Date(2026, 8, 27, 23, 59, 59); // Sep = 8
+    const el = document.getElementById("rsvpDays");
+    if (!el) return;
+
+    function update() {
+      const now = new Date();
+      const ms = deadline - now;
+      const days = Math.ceil(ms / (1000 * 60 * 60 * 24));
+
+      const unit = document.querySelector(".rsvpCountdownUnit");
+      const label = document.querySelector(".rsvpCountdownLabel");
+
+      if (days <= 0) {
+        el.textContent = "0";
+        if (unit) unit.textContent = "days";
+        if (label) label.textContent = "RSVP is now closed";
+        return;
+      }
+
+      el.textContent = String(days);
+      if (unit) unit.textContent = days === 1 ? "day" : "days";
+    }
+
+    update();
+    setInterval(update, 1000 * 60 * 60);
+  })();
+</script>
+
+</body>
+</html>

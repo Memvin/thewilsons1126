@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mark & Emmi – Häät</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Cormorant+Garamond:ital@1&family=Allura&display=swap" rel="stylesheet">
+
+  <!-- Local stylesheet (cache-busted) -->
+  <link rel="stylesheet" href="styles.css?v=11">
+</head>
+
+<body>
+
+<header class="top" id="home">
+  <div class="headerImage">
+    <img src="header.png" alt="Koristeellinen otsikkokuva">
+
+    <div class="headerOverlay">
+      <p class="weddingOf">Meidän häät</p>
+      <h1 class="names">Mark Wilson &amp; Emmi Vinberg</h1>
+
+      <nav class="nav">
+        <a href="#home">KOTI</a>
+        <a href="#rsvp">ILMOITTAUTUMINEN</a>
+        <a href="#faq">UKK</a>
+        <a href="things-to-do-fi.html">TEKEMISTÄ</a>
+<span class="langSwitch">
+  <a href="index.html" class="lang active" aria-label="English (Australia)">
+    <img class="flagIcon" src="flag-au.png" alt="Australian flag">
+  </a>
+  <a href="index-fi.html" class="lang" aria-label="Suomi">
+    <img class="flagIcon" src="flag-fi.png" alt="Finnish flag">
+  </a>
+</span>
+</nav>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="welcome">
+    <p>
+      Ihanaa, että olet täällä. Useiden vuosien aikana tapahtuneiden suunnitelmamuutosten jälkeen
+      olemme innoissamme saadessamme vihdoin juhlia tätä päivää rakkaiden ihmisten kanssa. Tältä sivustolta löydät
+      kaiken tarvitsemasi hääpäivää varten — emmekä malta odottaa, että pääsemme jakamaan sen kanssasi.
+    </p>
+  </section>
+
+  <section class="photoFrame">
+    <img src="hero.jpg" alt="Mark ja Emmi">
+  </section>
+
+  <div class="rule"></div>
+
+  <section class="centerText">
+    <p class="invite">Tervetuloa juhlimaan häitämme</p>
+    <p class="dateLine">Tiistai 10. marraskuuta 2026 · Sittella Winery, Herne Hill</p>
+    <p class="timeLine">Vihkiseremonia alkaa tasan klo <strong>16.00</strong></p>
+
+    <p class="smallNote">
+      Saavuthan paikalle viimeistään klo <strong>15.30</strong>, jotta vältymme viivästyksiltä.
+      Vihkiminen on offline-tilaisuus — pyydämme ystävällisesti laittamaan puhelimet ja kamerat pois seremonian ajaksi.
+    </p>
+  </section>
+
+  <div class="rule"></div>
+
+  <section id="details" class="infoSection">
+    <h2 class="sectionTitle">Juhlapaikka</h2>
+
+    <p class="infoMain">
+      Sittella Winery, 100 Barrett Street, Herne Hill WA 6056
+    </p>
+
+    <p class="infoSub">
+      <a class="mapLink"
+         href="https://maps.google.com/?q=Sittella+Winery+100+Barrett+Street+Herne+Hill+WA+6056"
+         target="_blank"
+         rel="noopener">
+        Katso Google Mapsissa
+      </a>
+    </p>
+
+    <div class="rule"></div>
+  </section>
+
+  <section class="infoSection">
+    <h2 class="sectionTitle">Vihkimisen jälkeen</h2>
+    <p class="infoMain">Cocktail-tilaisuus, jonka jälkeen illallinen ja tanssia</p>
+    <div class="rule"></div>
+  </section>
+
+  <section class="infoSection">
+    <h2 class="sectionTitle">Pukukoodi</h2>
+    <p class="infoMain"><strong>Smart casual</strong></p>
+    <p class="infoSub">
+      Pyydämme välttämään mustaa, valkoista ja punaista. Ei solmioita eikä shortseja, kiitos.
+    </p>
+    <div class="rule"></div>
+  </section>
+
+  <section class="infoSection">
+    <h2 class="sectionTitle">Lahjat</h2>
+    <p class="infoMain">Läsnäolosi on meille tärkeintä</p>
+    <p class="infoSub">
+      Halutessasi voit tuoda kortin — paikan päällä on lahjapöytä.
+    </p>
+    <div class="rule"></div>
+  </section>
+
+  <section id="travel" class="infoSection">
+    <h2 class="sectionTitle">Saapuminen Sittellaan</h2>
+    <p class="infoMain">
+      Paikalla on ilmainen pysäköinti. Julkista liikennettä ei ole Sittellaan.
+    </p>
+    <p class="infoSub">
+      Uber toimii alueella, mutta taksit ovat usein luotettavampia eteknin myöhään illalla.
+      Yritämme parhaamme mukaan auttaa yhteiskyydityksissä,
+      jos mainitset siitä ilmoittautumisessa.
+    </p>
+    <div class="rule"></div>
+  </section>
+
+  <section id="rsvp" class="infoSection">
+    <h2 class="sectionTitle">Ilmoittautuminen</h2>
+    <p class="infoMain">Pyydämme vastaamaan viimeistään <strong>sunnuntaina 27. syyskuuta 2026</strong></p>
+
+    <!-- stacked print + countdown -->
+    <div class="rsvpMeta">
+      <a class="mapLink printLink" href="print.html" target="_blank" rel="noopener">
+        Tulostettava versio
+      </a>
+
+      <div class="rsvpCountdown" aria-live="polite">
+        <span class="rsvpCountdownLabel">Vastausaikaa jäljellä</span>
+        <span id="rsvpDays" class="rsvpCountdownValue">—</span>
+        <span class="rsvpCountdownUnit">päivää</span>
+      </div>
+    </div>
+
+    <div class="rsvpEmbed">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfhlyQIaIhSgcnfkvUuqRgFlYjwNQM0D2BxI1aoG06ruKixcw/viewform?embedded=true"
+        title="Hääilmoittautuminen"
+      ></iframe>
+    </div>
+
+    <div class="rule"></div>
+  </section>
+
+  <!-- FAQ ACCORDION -->
+  <section id="faq" class="infoSection">
+    <h2 class="sectionTitle">UKK</h2>
+
+    <div class="accordion">
+
+      <details>
+        <summary>Kuka on kutsuttu?</summary>
+        <div class="answer">
+          Huomioithan, että kutsu koskee vain kutsussa nimettyjä henkilöitä.
+          Tämä on vain aikuisille tarkoitettu juhla (ei minkään ikäisiä lapsia).
+        </div>
+      </details>
+
+      <details>
+        <summary>Milloin pitää ilmoittautua?</summary>
+        <div class="answer">
+          Pyydämme ilmoittautumaan viimeistään <strong>sunnuntaina 27. syyskuuta 2026</strong>.
+          Ilmoittautumislomakkeessa kysytään ruokatoiveet, erityisruokavaliot/allergiat, kappaletoiveet
+          sekä kohta kysymyksille, vinkeille tai halutessasi muiston jakamiselle.
+        </div>
+      </details>
+
+      <details>
+        <summary>Missä häät pidetään?</summary>
+        <div class="answer">
+          <a class="mapLink" href="https://maps.google.com/?q=Sittella+Winery+100+Barrett+Street+Herne+Hill+WA+6056" target="_blank" rel="noopener">
+            Sittella Winery, 100 Barrett Street, Herne Hill WA 6056
+          </a>
+        </div>
+      </details>
+
+      <details>
+        <summary>Miten sinne pääsee?</summary>
+        <div class="answer">
+          Auto on helpoin vaihtoehto. Paikalla on ilmainen pysäköinti, eikä Sittellaan kulje julkista liikennettä.
+          Yritämme parhaamme mukaan auttaa kimppakyydeissä, jos mainitset siitä ilmoittautumisessa.
+          Uber ja DiDi toimivat alueella, mutta taksit saattavat olla luotettavampia.
+        </div>
+      </details>
+
+      <details>
+        <summary>Mikä on pukukoodi?</summary>
+        <div class="answer">
+          Smart casual. Pyydämme välttämään mustaa, valkoista ja punaista. Ei solmioita eikä shortseja, kiitos.
+          Miehille: kauluspaita ja siistit housut tai chinot (takki vapaaehtoinen). Naisille suosittelemme vaaleampia sävyjä.
+        </div>
+      </details>
+
+      <details>
+        <summary>Millainen sää on?</summary>
+        <div class="answer">
+          Marraskuu on Australian kevättä, ja sää voi olla mitä tahansa +15 asteen sateesta +35 asteen auringonpaisteeseen.
+          Vihkiminen on ulkona, mutta sateen sattuessa olemme katoksen alla. Käytäthän aurinkovoidetta
+          (meiltä löytyy myös paikan päältä), muista juoda vettä ja pysyä nesteytettynä. Illalla voi myös olla viileää.
+        </div>
+      </details>
+
+      <details>
+        <summary>Onko vihkiminen unplugged?</summary>
+        <div class="answer">
+          Kyllä — pyydämme ystävällisesti laittamaan puhelimet ja kamerat pois vihkimisen ajaksi.
+          Vihkimisen jälkeen saa toki kuvata ja jakaa kuvia hashtagilla <strong>#TheWilsons1126</strong>,
+          mutta pyydämme välttämään hääparin julkaisemista.
+        </div>
+      </details>
+
+      <details>
+        <summary>Saako somessa julkaista?</summary>
+        <div class="answer">
+          Kyllä — ihanaa jos jaat! Odotathan kuitenkin vihkimisen jälkeen, ja käytä halutessasi hashtagia
+          <strong>#TheWilsons1126</strong>. (Ja pyydämme välttämään hääparin julkaisemista.)
+        </div>
+      </details>
+
+      <details>
+        <summary>Mikä on aikataulu?</summary>
+        <div class="answer">
+          Saavuthan paikalle viimeistään <strong>15.30</strong> — vihkiminen alkaa tasan <strong>16.00</strong>.
+          Sen jälkeen cocktail-tilaisuus, illallinen ja tanssia. Ilta päättyy noin klo <strong>23.30</strong>.
+        </div>
+      </details>
+
+      <details>
+        <summary>Lahjat / lahjapöytä?</summary>
+        <div class="answer">
+          Läsnäolosi on meille tärkeintä. Halutessasi voit tuoda kortin — paikan päällä on lahjapöytä.
+        </div>
+      </details>
+
+      <details>
+        <summary>Majoitusvaihtoehdot</summary>
+        <div class="answer">
+          <p class="answerText">
+            Suosittelemme majoittumaan lähelle Swan Valley -aluetta (tai Midlandiin helppouden vuoksi).
+            Alla muutamia vaihtoehtoja. Selvitämme mahdollisuutta alennettuun hintaan — jos onnistuu,
+            tiedotamme siitä myöhemmin.
+          </p>
+
+          <ul class="answerList">
+            <li><a class="mapLink" href="https://all.accor.com/hotel/1980/index.en.shtml" target="_blank" rel="noopener">Novotel Vines Resort Swan Valley</a></li>
+            <li><a class="mapLink" href="https://all.accor.com/hotel/7517/index.en.shtml" target="_blank" rel="noopener">The Sebel Swan Valley The Vines</a></li>
+            <li><a class="mapLink" href="https://swanvalleyhotel.com.au/" target="_blank" rel="noopener">The Swan Valley Hotel</a></li>
+            <li><a class="mapLink" href="https://mandoonestate.com.au/maya-maya" target="_blank" rel="noopener">Maya Maya at Mandoon Estate</a></li>
+            <li><a class="mapLink" href="https://www.big4.com.au/caravan-parks/wa/greater-perth/perth-midland-tourist-park" target="_blank" rel="noopener">BIG4 Perth Midland Tourist Park</a></li>
+            <li><a class="mapLink" href="https://www.questapartments.com.au/properties/wa/midland/quest-midland" target="_blank" rel="noopener">Quest Midland</a></li>
+          </ul>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="rule"></div>
+    <p class="muted">Emme malta odottaa, että pääsemme juhlimaan kanssasi <span class="heart">♥</span></p>
+    <a class="backToTop" href="#home">Takaisin ylös ↑</a>
+  </footer>
+
+</main>
+
+<script>
+  (function () {
+    const deadline = new Date(2026, 8, 27, 23, 59, 59); // Sep = 8
+    const el = document.getElementById("rsvpDays");
+    if (!el) return;
+
+    function update() {
+      const now = new Date();
+      const ms = deadline - now;
+      const days = Math.ceil(ms / (1000 * 60 * 60 * 24));
+
+      const unit = document.querySelector(".rsvpCountdownUnit");
+      const label = document.querySelector(".rsvpCountdownLabel");
+
+      if (days <= 0) {
+        el.textContent = "0";
+        if (unit) unit.textContent = "päivää";
+        if (label) label.textContent = "Ilmoittautuminen on sulkeutunut";
+        return;
+      }
+
+      el.textContent = String(days);
+      if (unit) unit.textContent = "päivää";
+    }
+
+    update();
+    setInterval(update, 1000 * 60 * 60);
+  })();
+</script>
+
+</body>
+</html>
